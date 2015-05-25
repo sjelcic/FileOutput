@@ -8,21 +8,18 @@ class ProfDevi
 	{
 	static void Main(string[] args)
 		{
-		FileInfo MyFile = new FileInfo(@"c:\work\FileOutput\input.txt"); //Create a FileInfo instance representing an existing text file.
-		StreamReader sr = MyFile.OpenText(); //Instantiate a StreamReader to read from the text file.
-		StreamWriter sw = new StreamWriter(@"C:\work\FileOutput\output.txt"); // Write to a file.
+		FileInfo MyFile = new FileInfo(@"c:\work\FileOutput\input.txt");      //Create a FileInfo instance representing an existing text file.
+		StreamReader sr = MyFile.OpenText();                                  //Instantiate a StreamReader to read from the text file.
+		StreamWriter sw = new StreamWriter(@"C:\work\FileOutput\output.txt"); //Setup file to write too.
 
-		while (!sr.EndOfStream) // Scrolling through file until end.
+		while (!sr.EndOfStream)												  // Scrolling through file until end.
 			{
-			int Temp = sr.Read(); // Reads a single char.
+			int CharAsInt = sr.Read();										  // Reads a single char.
 
+			if ((Char)CharAsInt >= 'a' && (Char)CharAsInt <= 'z')			  // If the char is a lowercase letter from a to z.
+				{ CharAsInt = CharAsInt + 'A' - 'a'; }
 
-			Char WriteToFile = (Char)Temp; // Convert the int to a char.
-
-			//if (WriteToFile >= 'a' && WriteToFile <= 'z') // If the char is a lowercase letter from a to z.
-				//{ WriteToFile = WriteToFile + 'A' - 'a'; }
-
-			sw.Write(WriteToFile);
+			sw.Write((Char)CharAsInt);										  // Write the character to the output file.
 			}
 		
 		sr.Close();

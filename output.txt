@@ -1,11 +1,11 @@
-This is a test file. This file should be read by the program FileOutput and every letter in 
-this file should be capitalized and output to a file called  output.txt.
+THIS IS A TEST FILE. THIS FILE SHOULD BE READ BY THE PROGRAM FILEOUTPUT AND EVERY LETTER IN 
+THIS FILE SHOULD BE CAPITALIZED AND OUTPUT TO A FILE CALLED  OUTPUT.TXT.
 
-Extra test line ojdpejwqpdm[we nlnONonodn0 121jpijNonNOS(jiwj
+EXTRA TEST LINE OJDPEJWQPDM[WE NLNONONODN0 121JPIJNONNOS(JIWJ
 
-jwdpms
-qkwo m
-2912idnwms
-1msodm2dm skJIdmnond
+JWDPMS
+QKWO M
+2912IDNWMS
+1MSODM2DM SKJIDMNOND
 
-k3p2m1@K#1#m2me2msq; qDKWQDWQfdWEdk23[d<eqM
+K3P2M1@K#1#M2ME2MSQ; QDKWQDWQFDWEDK23[D<EQM
