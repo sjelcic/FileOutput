@@ -13,7 +13,7 @@ class ProfDevi
 		{
 		FileInfo myFile = new FileInfo(path);      //Create a FileInfo instance representing an existing text file.
 		StreamReader sr = myFile.OpenText();                                  //Instantiate a StreamReader to read from the text file.
-		StreamWriter sw = new StreamWriter(@"C:\work\FileOutput\output.txt"); //Setup file to write too.
+		StreamWriter sw = new StreamWriter("/work/FileOutput/output.txt"); //Setup file to write too.
 	
 		while (!sr.EndOfStream)												  // Scrolling through file until end.
 			{
@@ -36,7 +36,7 @@ class ProfDevi
 			System.Console.WriteLine("Please enter a path like /work/fileoutput/input.txt");
 			}
 		else if (!File.Exists(args[0])) // Does that file actually exist?
-			{ System.Console.WriteLine("That file doesn't exist."); }
+			{ System.Console.WriteLine("That file doesn't exist. Make sure you include the suffix (.txt, etc.)."); }
 		else
 			{ CapitalizeToFile(args[0]); } // If there is an argument capitalize the letters.
 		
